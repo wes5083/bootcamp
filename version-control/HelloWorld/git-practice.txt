@@ -1,0 +1,21 @@
+Practice 1. Git basics.
+Part 1. The Git command line. Make sure you have entered your username and email in the Git configuration.
+Create a local repository on your own computer. Save three text files to the repository
+with the Commit command, the file names or content do not matter.
+Once you have saved the files, make a small change to each file. How do you select the files
+that are the target of the next commit? Consider a situation where, for example, you want to save one
+file in one commit and two in an another. What Git commands do you need?
+Find out how to view the version control history and how to compare file versions with each other.
+Finally, find out where Git stores the repository's historical data.
+--
+Part 2. Visual Studio Code and Git. Open the local folder where
+your Git repository (repo) is with Visual Studio Code. Use the File/Open Folder command.
+Find out from which Visual Studio Code view you can see the Git version control situation. How does the view differ from what
+you see on the command line with the "git status" command?
+Edit all three files and add a new one. How can you choose which files will be saved
+with the next Commit command? Make 1-3 new commits through the Visual Studio Code interface.
+Where in the Visual Studio Code interface can you find the file change history? And how can you compare
+file versions?
+--
+Bonus: create an account and repo on the GitHub service. How can you upload the
+repo on your computer to this cloud service?
