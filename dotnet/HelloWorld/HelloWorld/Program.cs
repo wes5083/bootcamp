@@ -21,4 +21,6 @@ Car myCar = new Car();
 Car myCar2 = new();
 
 myCar.Make = "Toyota";
-
+myCar.Model = "Corolla";
+myCar.CurrentSpeed = 10;
+myCar.EngineRunning = true;
