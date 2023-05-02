@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form action="">
+
+
+<div class="mb-3">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <h1>Simple Calculate</h1>
+    <p>Please enter two number and click the sum button to calculate the sum of the numbers</p>
+
+
+    <label for="exampleInputEmail1" class="form-label">Value A:</label>
+    <input id="inputA" type="number" class="form-control" placeholder=""></input>
+
+    <label for="exampleInputEmail1" class="form-label">Value B:</label>
+    <input id="inputB" type="number" class="form-control" placeholder=""></input>
+
+
+    <p>Sum Value:<input id="inputC" readonly class="form-control" placeholder=""></input>
+    </p>
+    </br>
+    <button type="button" onclick="calculate()" class="btn btn-primary">Calculate</button>
+
+
+</div>
+
+</form>
+@section Scripts{
+    <script type="text/javascript" language="JavaScript">
+    function calculate() {
+    const valueA = parseInt(document.getElementById("inputA").value);
+    const valueB = parseInt(document.getElementById("inputB").value);
+    const valueC = valueA + valueB;
+    document.getElementById("inputC").value = valueC;
+    }
+    </script>
+}
