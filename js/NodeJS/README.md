@@ -2,6 +2,10 @@
 
 ## npm init --yes
 
+# run nodejs
+
+## node index.js
+
 # Add SQLite dependence
 
 ## npm install sqlite3 --save

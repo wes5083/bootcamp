@@ -8,3 +8,4 @@ dotnet/MVC/practice1/WebCalculate/obj
 dotnet/Blazorwasm/practice1/.vscode
 dotnet/Blazorwasm/practice1/bin
 dotnet/Blazorwasm/practice1/obj
+js/*/*/node_modules
