@@ -1,7 +1,7 @@
 console.log("Hello world");
 
 var fs = require("fs");
-var file = "./northwind.db";
+var file = "../../../database/northwind.db";
 var exists = fs.existsSync(file);
 var sqlite3 = require("sqlite3").verbose();
 var db = new sqlite3.Database(file);
