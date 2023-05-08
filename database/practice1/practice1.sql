@@ -12,11 +12,14 @@ where customer.CompanyName='Que Delícia';
 select * from Employees where city='London';
 
 -- part2
+select sum(detail.UnitPrice * detail.Quantity) 
+    from 'Order Details' as detail;
+
 
 -- How many customers does Northwind have?
 select count(1) from customers;
 
 -- How much tofu (in $) has Northwind sold?
-select sum(detail.UnitPrice * detail.Quantity - detail.Discount) 
+select sum(detail.UnitPrice * detail.Quantity *(1 - detail.Discount) ) 
     from 'Order Details' as detail left join Products as product on detail.ProductID=product.ProductID 
     where product.ProductName='Tofu';
