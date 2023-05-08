@@ -1,4 +1,4 @@
-# 1. init nodejs
+# 1. Init nodejs
 
 ### npm init --yes
 
@@ -6,7 +6,7 @@
 
 ### npm install sqlite3 --save
 
-# 3. run nodejs
+# 3. Create index.js and Run nodejs
 
 ### node index.js
 
