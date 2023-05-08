@@ -1,15 +1,15 @@
-# init nodejs
+# 1. init nodejs
 
-## npm init --yes
+### npm init --yes
 
-# run nodejs
+# 2. Add SQLite dependence
 
-## node index.js
+### npm install sqlite3 --save
 
-# Add SQLite dependence
+# 3. run nodejs
 
-## npm install sqlite3 --save
+### node index.js
 
 # Add express dependence
 
-## npm install express -save
+### npm install express -save
