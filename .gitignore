@@ -1,17 +1,14 @@
-dotnet/HelloWorld/HelloWorld/.vscode
-dotnet/HelloWorld/HelloWorld/obj
-dotnet/HelloWorld/HelloWorld/bin
-dotnet/MVC/practice1/WebCalculate/.vscode
-dotnet/MVC/practice1/WebCalculate/bin
-dotnet/MVC/practice1/WebCalculate/obj
+dotnet/HelloWorld/*/.vscode
+dotnet/HelloWorld/*/obj
+dotnet/HelloWorld/*/bin
 
-dotnet/MVC/AspNetMvcNorthwindDemo/.vscode
-dotnet/MVC/AspNetMvcNorthwindDemo/AspNetMvcNorthwindDemo/bin
-dotnet/MVC/AspNetMvcNorthwindDemo/AspNetMvcNorthwindDemo/obj
+dotnet/MVC/*/*/.vscode
+dotnet/MVC/*/*/bin
+dotnet/MVC/*/*/obj
+dotnet/HttpAPI/*/.vscode
+dotnet/HttpAPI/*/bin
+dotnet/HttpAPI/*/obj
 
-dotnet/HttpAPI/APIDemo/.vscode
-dotnet/HttpAPI/APIDemo/bin
-dotnet/HttpAPI/APIDemo/obj
 
 dotnet/Blazorwasm/practice1/.vscode
 dotnet/Blazorwasm/practice1/bin
