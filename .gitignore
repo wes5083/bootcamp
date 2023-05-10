@@ -9,6 +9,10 @@ dotnet/MVC/AspNetMvcNorthwindDemo/.vscode
 dotnet/MVC/AspNetMvcNorthwindDemo/AspNetMvcNorthwindDemo/bin
 dotnet/MVC/AspNetMvcNorthwindDemo/AspNetMvcNorthwindDemo/obj
 
+dotnet/HttpAPI/APIDemo/.vscode
+dotnet/HttpAPI/APIDemo/bin
+dotnet/HttpAPI/APIDemo/obj
+
 dotnet/Blazorwasm/practice1/.vscode
 dotnet/Blazorwasm/practice1/bin
 dotnet/Blazorwasm/practice1/obj
