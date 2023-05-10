@@ -5,6 +5,10 @@ dotnet/MVC/practice1/WebCalculate/.vscode
 dotnet/MVC/practice1/WebCalculate/bin
 dotnet/MVC/practice1/WebCalculate/obj
 
+dotnet/MVC/AspNetMvcNorthwindDemo/.vscode
+dotnet/MVC/AspNetMvcNorthwindDemo/AspNetMvcNorthwindDemo/bin
+dotnet/MVC/AspNetMvcNorthwindDemo/AspNetMvcNorthwindDemo/obj
+
 dotnet/Blazorwasm/practice1/.vscode
 dotnet/Blazorwasm/practice1/bin
 dotnet/Blazorwasm/practice1/obj
