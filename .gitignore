@@ -17,5 +17,9 @@ dotnet/SQLite/bin
 dotnet/SQLite/obj
 dotnet/SQLite/.vscode
 
+azure/AzureNoSQLDatabaseDemo/.vscode
+azure/AzureNoSQLDatabaseDemo/AzureNoSQLDatabaseDemo/bin
+azure/AzureNoSQLDatabaseDemo/AzureNoSQLDatabaseDemo/obj
+
 js/*/*/node_modules
 js/*/*/package-lock.json

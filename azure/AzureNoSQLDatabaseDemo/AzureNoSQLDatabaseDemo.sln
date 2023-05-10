@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureNoSQLDatabaseDemo", "AzureNoSQLDatabaseDemo\AzureNoSQLDatabaseDemo.csproj", "{EAE612C7-D242-4BC5-B5C5-E9BF609B031E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAE612C7-D242-4BC5-B5C5-E9BF609B031E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE612C7-D242-4BC5-B5C5-E9BF609B031E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE612C7-D242-4BC5-B5C5-E9BF609B031E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE612C7-D242-4BC5-B5C5-E9BF609B031E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28454F02-3B25-4AA1-A791-58EBE9742053}
+	EndGlobalSection
+EndGlobal
