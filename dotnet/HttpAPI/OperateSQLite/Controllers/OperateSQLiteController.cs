@@ -11,14 +11,14 @@ public class OperateSQLiteController : ControllerBase
 {
 
 
-    [Route("GetFinnishCustomers")]
-    public List<Customer> GetFinnishCustomers()
+    [Route("GetCustomers")]
+    public List<Customer> GetCustomers()
     {
 
         SQLiteConnection connection = new SQLiteConnection("Data Source=C:\\00_zyw\\500_Bootcamp\\bootcamp\\database\\northwind.db");
         connection.Open();
 
-        string sql = "SELECT * FROM Customers WHERE Country = 'Finland'";
+        string sql = "SELECT * FROM Customers";
 
         SQLiteCommand command = new SQLiteCommand(sql, connection);
         SQLiteDataReader reader = command.ExecuteReader();
@@ -47,8 +47,8 @@ public class OperateSQLiteController : ControllerBase
     }
 
 
-    [Route("GetFinnishCustomerCompanyName")]
-    public List<string> GetFinnishCustomerCompanyName()
+    [Route("GetFinnishCustomers")]
+    public List<string> GetFinnishCustomers()
     {
 
         SQLiteConnection connection = new SQLiteConnection("Data Source=C:\\00_zyw\\500_Bootcamp\\bootcamp\\database\\northwind.db");
