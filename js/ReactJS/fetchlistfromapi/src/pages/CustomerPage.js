@@ -22,11 +22,11 @@ const CustomerPage = () => {
   }, []);
 
   return (
-    <div className="container">
-      <table className="table table-bordered">
+    <div>
+      <table>
         <thead>
           <tr>
-            <th>No.</th>
+            <th>ID</th>
             <th>Name</th>
           </tr>
         </thead>
