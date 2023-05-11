@@ -4,7 +4,7 @@ using System.Data.SQLite;
 namespace OperateSQLite.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/")]
 public class OperateSQLiteController : ControllerBase
 {
 
