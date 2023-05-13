@@ -24,3 +24,5 @@ azure/AzureNoSQLDatabaseDemo/AzureNoSQLDatabaseDemo/obj
 
 js/*/*/node_modules
 js/*/*/package-lock.json
+
+python/*.idea
