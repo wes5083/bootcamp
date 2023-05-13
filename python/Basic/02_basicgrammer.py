@@ -13,6 +13,9 @@ print("Giraffe\"Academy")
 
 phrase = "Giraffe Academy"
 print(phrase + " is cool.")
+print(phrase.strip().title())
+
+print(phrase.capitalize())
 print(phrase.lower())  #
 print(phrase.upper())
 print(phrase.isupper())
