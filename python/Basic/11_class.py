@@ -8,6 +8,7 @@ print(student1.gpa)
 print(student2.name)
 print(student2.gpa)
 
+# Object Function
 print(student1.on_honor_roll())
 print(student2.on_honor_roll())
 
