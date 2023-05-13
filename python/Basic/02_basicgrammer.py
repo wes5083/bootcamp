@@ -1,3 +1,10 @@
+# Comments
+print("This is a single comment")
+'''
+This is multy comments
+'''
+print("This is multy comments")
+
 # 1: Strings
 print("----------------1: Strings-----------------")
 print("Giraffe Academy")
@@ -41,7 +48,7 @@ print("----------------3: Input From User-----------------")
 # print("Hello " + name + "! You are " + age)
 
 # 4: Lists
-print("----------------Lists-----------------")
+print("----------------4: Lists-----------------")
 friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
 friends2 = ["Kevin", 2, True]
 print(friends)  # All
@@ -80,7 +87,7 @@ friends3 = friends2.copy()
 print(friends3)
 
 # 5: Tuples
-print("----------------Tuples-----------------")
+print("----------------5: Tuples-----------------")
 coordinate = (4, 5)
 print(coordinate)
 print(coordinate[0])  # 4
@@ -90,13 +97,13 @@ print(coordinate[1])  # 5
 coordinates = [(4, 5), (6, 7)]
 
 # 6: Function
-print("----------------Function-----------------")
+print("----------------6: Function-----------------")
 
 # 7: If statement
-print("----------------If statement-----------------")
+print("----------------7: If statement-----------------")
 
 # 8: Dictionaries
-print("----------------Dictionaries-----------------")
+print("----------------8: Dictionaries-----------------")
 
 monthConversions = {
     "Jan": "January",
@@ -136,10 +143,72 @@ print(monthConversions.get(3, "Not a valid Key"))
 print(monthConversions.get(13, "Not a valid Key"))
 
 # 9: While loop
-print("----------------While loop-----------------")
+print("----------------9: While loop-----------------")
 
 i = 1
 while i <= 10:
     print(i)
     i += 1
 print("Done with loop")
+
+# 10: While loop
+print("----------------10: While loop-----------------")
+
+for letter in "Zhang wes":
+    print(letter)
+
+friends = ["Mike", "Jim", "Toby"]
+for friend in friends:
+    print(friend)
+
+for index in range(10):
+    print(index)  # 0 - 9
+
+for index in range(3, 10):
+    print(index)  # 3 - 9
+
+for index in range(len(friends)):
+    print(friends[index])
+
+# 11: Exponent function
+print("----------------11: Exponent function-----------------")
+
+def raise_to_power(base_num, pow_num):
+    result = 1
+    for index in range(pow_num):
+        result = result * base_num
+    return result
+
+
+print(raise_to_power(2,3))
+
+# 12: Lists & Nested loop
+print("----------------12: Lists & Nested loop-----------------")
+number_grid = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [0]
+]
+
+print(number_grid[0][0])    # 1
+print(number_grid[2][1])    # 8
+
+for row in number_grid:
+    print(row)
+    for col in row:
+        print(col)
+
+
+# 13: Try/Expect
+print("----------------13: Try/Expect-----------------")
+
+try:
+    number = int(input("Enter a number: "))
+    print(number)
+except:
+    print("Invalid Input")
+
+
+
+
