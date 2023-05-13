@@ -204,9 +204,13 @@ for row in number_grid:
 print("----------------13: Try/Expect-----------------")
 
 try:
+    value = 10 / 0
     number = int(input("Enter a number: "))
     print(number)
-except:
+except ZeroDivisionError as err:
+    print("Divided by Zero")
+    print(err)
+except ValueError:
     print("Invalid Input")
 
 
