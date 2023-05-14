@@ -8,6 +8,41 @@
 </head>
 <body>
 <h1>This is User List</h1>
-<img src="{% static 'img/HTML.jpg' %} " alt="img"/>
+<div>{{name}}</div>
+<div>{{role}}</div>
+<div>{{role.0}}</div>
+<div>{{role.1}}</div>
+<div>
+    {% for item in role %}
+    <span>{{item}}</span>
+    {% endfor %}
+</div>
+<hr>
+{{user}}
+<ul>
+    {% for k,v in user.items %}
+    <li>{{ k }} = {{ v }} </li>
+    {% endfor %}
+</ul>
+<hr>
+{{user_lists}}
+{{user_lists.0}}
+{{user_lists.0.name}}
+
+<ul>
+    {% for item in user_lists %}
+    <li>{{ item.name }}  </li>
+    <li>{{ item.salary }}  </li>
+    <li>{{ item.role }}  </li>
+    {% endfor %}
+</ul>
+{% if name == "Wes" %}
+<h1>User name is {{ name }}</h1>
+{% elif name == "Wes2" %}
+<h1>User name2 is {{ name }}</h1>
+{% else %}
+<h1>User name is NONE</h1>
+{% endif %}
+<img src="{% static 'img/HTML.jpg' %} " width="100px" height="100px" alt="img"/>
 </body>
 </html>
