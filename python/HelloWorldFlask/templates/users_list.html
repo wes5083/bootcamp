@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Users List</h1>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>mobile</th>
+    </tr>
+    </thead>
+    <tbody>
+    {%  for item in data_list %}
+    <tr>
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.mobile}}</td>
+
+    </tr>
+    {% endfor %}
+    </tbody>
+
+
+</table>
+</body>
+</html>
