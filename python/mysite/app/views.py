@@ -1,5 +1,5 @@
 from app.models import Department, UserInfo
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect
 
 
 def index(request):
@@ -48,3 +48,16 @@ def users_list(request):
         print(item.id, item.name, item.password, item.age)
     return render(request, "users_list.html", {"users_list": users_list})
 
+
+def users_add(request):
+    if request.method == "GET":
+        return render(request, "users_add.html")
+    name = request.POST.get("name")
+    password = request.POST.get("password")
+    age = request.POST.get("age")
+    UserInfo.objects.create(name=name, password=password, age=age)
+    return redirect("/users/list/")
+
+
+def users_update(request):
+    return render(request, "users_update.html")
