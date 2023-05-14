@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from django.shortcuts import render, HttpResponse,redirect
+from django.shortcuts import render, HttpResponse, redirect
 
 
 # Create your views here.
@@ -18,7 +18,7 @@ def user_list(request):
         {"name": "Wes3", "salary": 3000, "role": "admin"},
 
     ]
-    return render(request, "user_list.html", {"name": name, "role": roles, "user": user,"user_lists":user_lists})
+    return render(request, "user_list.html", {"name": name, "role": roles, "user": user, "user_lists": user_lists})
 
 
 def user_add(request):
@@ -29,7 +29,7 @@ def news(request):
     # GET method & POST method & request params
     print(request.method)
     print(request.GET)  # get request get params
-    print(request.POST) # get request post params
+    print(request.POST)  # get request post params
 
     # response a content
     # return HttpResponse("This is content response")
@@ -38,4 +38,22 @@ def news(request):
     # return redirect("https://www.google.com")
 
     # response a page
-    return render(request, "news.html",{"title":"This is a title"})
+    return render(request, "news.html", {"title": "This is a title"})
+
+
+def login(request):
+    print(request.method)
+    print(request.GET)  # get request get params
+    print(request.POST)  # get request post params
+
+    if request.method == "GET":
+        return render(request, "login.html")
+    else:
+        print(request.POST)
+        login_name = request.POST.get("login_name")
+        password = request.POST.get("password")
+        if login_name == 'admin' and password == '123':
+            return HttpResponse("success")
+        else:
+            # return HttpResponse("fail")
+            return render(request, "login.html", {"error_msg": "Login name or password is error"})
