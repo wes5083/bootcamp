@@ -24,5 +24,6 @@ urlpatterns = [
     path('index/', views.index),
     path('users/list', views.user_list),
     path('users/add', views.user_add),
+    path('news', views.news),
 
 ]

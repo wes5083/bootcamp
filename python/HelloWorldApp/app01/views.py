@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse,redirect
 
 
 # Create your views here.
@@ -23,3 +23,19 @@ def user_list(request):
 
 def user_add(request):
     return render(request, "user_add.html")
+
+
+def news(request):
+    # GET method & POST method & request params
+    print(request.method)
+    print(request.GET)  # get request get params
+    print(request.POST) # get request post params
+
+    # response a content
+    # return HttpResponse("This is content response")
+
+    # response URL, redirect
+    # return redirect("https://www.google.com")
+
+    # response a page
+    return render(request, "news.html",{"title":"This is a title"})
