@@ -27,5 +27,6 @@ urlpatterns = [
     # user manager
     path('users/list/', views.users_list),
     path('users/add/', views.users_add),
-    path('users/update', views.users_update),
+    path('users/delete', views.users_delete),
+
 ]

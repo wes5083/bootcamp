@@ -59,5 +59,7 @@ def users_add(request):
     return redirect("/users/list/")
 
 
-def users_update(request):
-    return render(request, "users_update.html")
+def users_delete(request):
+    user_id = request.GET.get("id")
+    UserInfo.objects.filter(id=user_id).delete()
+    return redirect("/users/list/")

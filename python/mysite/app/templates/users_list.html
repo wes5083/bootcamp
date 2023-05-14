@@ -12,6 +12,7 @@
         <th>Name</th>
         <th>Password</th>
         <th>Age</th>
+        <th>Operate</th>
     </tr>
     </thead>
     <tbody>
@@ -21,6 +22,9 @@
         <td>{{ item.name }}</td>
         <td>{{ item.password }}</td>
         <td>{{ item.age }}</td>
+        <td>
+            <a href="/users/delete?id={{ item.id }}">delete</a>
+        </td>
     </tr>
     {% endfor %}
     </tbody>
