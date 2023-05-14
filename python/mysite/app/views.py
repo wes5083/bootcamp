@@ -1,5 +1,5 @@
-from django.shortcuts import render, HttpResponse
 from app.models import Department, UserInfo
+from django.shortcuts import render, HttpResponse
 
 
 def index(request):
@@ -40,3 +40,11 @@ def orm(request):
     UserInfo.objects.filter(id=2).update(age=50)
 
     return HttpResponse("success")
+
+
+def users_list(request):
+    users_list = UserInfo.objects.all()
+    for item in users_list:
+        print(item.id, item.name, item.password, item.age)
+    return render(request, "users_list.html", {"users_list": users_list})
+

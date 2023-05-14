@@ -24,4 +24,8 @@ urlpatterns = [
     path('index/', views.index),
     path('orm/', views.orm),
 
+    # user manager
+    path('users/list/', views.users_list),
+    path('users/add/', views.users_add),
+    path('users/update', views.users_update),
 ]
