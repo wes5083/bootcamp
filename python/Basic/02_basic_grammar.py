@@ -216,6 +216,30 @@ except ZeroDivisionError as err:
 except ValueError:
     print("Invalid Input")
 
+# 14: Formate
+print("----------------14: Formate-----------------")
+
+name = "Jack"
+print(f'Name is {name}')
+print('Name is %s', name)
+
+print('%f' % 1.11) # 1.110000  default 6 decimal places
+print('%.1f' % 1.11) # 1.1      keep 1 decimal places
+print('%g' % 1111.1111) # 1111.11   keep 6 number
+
+print('%20s' % 'hello world') #          hello world  Right-aligned, take 20 bits, if not enough, make up
+print('%-20s' % 'hello world') # hello world                    Left-aligned, take 20 bits, fill in if not enough
+print('%.2s' % 'hello world')   # he
+print('%10.2s' % 'hello world')  #         he       Right justify, take 2 bits
+print('%-10.2s' % 'hello world') # he               Left justified, take 2 bits
+
+print('{} {}'.format('hello','world'))  #  hello world
+print('{0} {1}'.format('hello','world'))  #  hello world
+print('{0} {1} {0}'.format('hello','world'))  #  hello world hello
+print('{1} {1} {0}'.format('hello','world'))# world world hello
+print('{a} {tom} {a}'.format(tom='hello',a='world'))  #  world hello world
+
+
 
 
 
