@@ -19,6 +19,6 @@ class UserInfo(models.Model):
 
     gender_choices = (
         (1, "male"),
-        (2, "femal"),
+        (2, "female"),
     )
     gender = models.SmallIntegerField(verbose_name="gender", choices=gender_choices)
