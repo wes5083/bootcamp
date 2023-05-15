@@ -1,8 +1,33 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, Response
 import pymysql.cursors
 import pymysql
+import random
 
 app = Flask(__name__)
+
+correct = 0
+
+@app.route("/api/guessStart", methods=["GET", "POST"])
+def guess_start():
+    correct = random.randint(1,20)
+    print(correct)
+    json = '{"status":"Game started."}'
+    return Response(json, mimetype="application/json")
+
+
+@app.route("/api/guessCheck",methods=["GET"])
+def guess_check():
+    guess = int(request.args.get("guess",0))
+    print(guess)
+    statusText = ""
+    if guess == correct:
+        statusText = "Correct! You win the game!"
+    elif guess < correct:
+        statusText = "The correct number is larger."
+    else:
+        statusText = "The correct number is smaller."
+    json = '{ "guess": "' + str(guess) + '", "status": "' + statusText + '" }'
+    return Response(json, mimetype='application/json')
 
 
 @app.route("/numbers/operate")
