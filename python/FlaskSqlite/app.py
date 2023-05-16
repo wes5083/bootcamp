@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, json
+from flask import Flask, jsonify, request
 import sqlite3
 
 app = Flask(__name__)
@@ -9,40 +9,26 @@ db = "C:\\00_zyw\\500_Bootcamp\\bootcamp\\database\\northwind.db"
 @app.route("/customers", methods=['GET'])
 def customers():
     con = sqlite3.connect(db)
-    country = request.args.get("country", "")
-    sql = "SELECT * FROM Customers "
-    if country:
-        sql = "SELECT * FROM Customers WHERE Country = '" + str(country) + "'"
+    sql = "SELECT * FROM Customers Where 1=1 "
+
+    # params
+    for key, value in request.args.items():
+        sql += (" AND " + key + " = '" + value + "'")
+
     cur = con.cursor()
     cur.execute(sql)
     data_list = cur.fetchall()
     cur.close()
     con.close()
 
+    # column title
+    column_names = [description[0] for description in cur.description]
+
     rows = []
     for row in data_list:
-        row_dict = {
-            'CustomerID': row[0],
-            'CompanyName': row[1],
-            'ContactName': row[2],
-            'ContactTitle': row[3],
-            'Address': row[4],
-            'City': row[5],
-            'Region': row[6],
-            'PostalCode': row[7],
-            'Phone': row[8],
-            'Fax': row[9]
-        }
-        rows.append(row_dict)
-
-    json_data = json.dumps(rows)
-
-    return json_data
-
-
-def json_print(json_object):
-    return json.dumps(json_object)
+        rows.append(dict(zip(column_names, row)))
+    return jsonify(rows)
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True, port='8001')
+    app.run()
