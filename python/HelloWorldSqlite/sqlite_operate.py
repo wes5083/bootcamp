@@ -1,28 +1,35 @@
 import sqlite3
 import csv
 
+db = "C:\\00_zyw\\500_Bootcamp\\bootcamp\\database\\northwind.db"
+csv_file = "customers_finnish.csv"
+csv_title = ['CustomerID', 'CompanyName', 'ContactName', 'ContactTitle', 'Address', 'City', 'Region', 'PostalCode',
+             'Country',
+             'Phone', 'Fax']
 
-def customers_finnish():
-    con = sqlite3.connect("C:\\00_zyw\\500_Bootcamp\\bootcamp\\database\\northwind.db")
+
+def query(sql):
+    con = sqlite3.connect(db)
     cur = con.cursor()
-    cur.execute("SELECT * FROM Customers WHERE Country = 'Finland'")
+    cur.execute(sql)
     data_list = cur.fetchall()
-    for customer in data_list:
-        print(customer)
     cur.close()
     con.close()
     return data_list
 
 
+def customers_finnish():
+    sql = "SELECT * FROM Customers WHERE Country = 'Finland'"
+    return query(sql)
+
+
 def export_cvs():
-    data_list = customers_finnish()
-    columns = ['CustomerID', 'CompanyName', 'ContactName', 'ContactTitle', 'Address', 'City', 'Region', 'PostalCode',
-               'Country',
-               'Phone', 'Fax']
-    with open("customers_finnish.csv", 'w+', newline='') as file:
+    sql = "SELECT * FROM Customers"
+    csv_data = query(sql)
+    with open(csv_file, 'w+', encoding='utf8', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(columns)
-        writer.writerows(data_list)
+        writer.writerow(csv_title)
+        writer.writerows(csv_data)
 
 
 customers_finnish()
