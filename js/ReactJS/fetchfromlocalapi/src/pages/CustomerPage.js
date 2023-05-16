@@ -7,9 +7,10 @@ const CustomerPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        fetch("http://localhost:5062/api/GetCustomers")
+        fetch("http://localhost:5000/api/customers")
           .then((response) => response.json())
           .then((data) => {
+            console.log(data);
             setCustomerList(data);
           });
         setIsLoading(false);
@@ -23,7 +24,7 @@ const CustomerPage = () => {
 
   return (
     <div>
-      <table>
+      <table border="1">
         <thead>
           <tr>
             <th>ID</th>
@@ -48,18 +49,18 @@ const CustomerPage = () => {
             customerList &&
             customerList.map((customer) => {
               return (
-                <tr key={customer.customerID}>
-                  <td>{customer.customerID}</td>
-                  <td>{customer.companyName}</td>
-                  <td>{customer.contactName}</td>
-                  <td>{customer.contactTitle}</td>
-                  <td>{customer.address}</td>
-                  <td>{customer.city}</td>
-                  <td>{customer.region}</td>
-                  <td>{customer.postalCode}</td>
-                  <td>{customer.country}</td>
-                  <td>{customer.phone}</td>
-                  <td>{customer.fax}</td>
+                <tr key={customer.CustomerID}>
+                  <td>{customer.CustomerID}</td>
+                  <td>{customer.CompanyName}</td>
+                  <td>{customer.ContactName}</td>
+                  <td>{customer.ContactTitle}</td>
+                  <td>{customer.Address}</td>
+                  <td>{customer.City}</td>
+                  <td>{customer.Region}</td>
+                  <td>{customer.PostalCode}</td>
+                  <td>{customer.Country}</td>
+                  <td>{customer.Phone}</td>
+                  <td>{customer.Fax}</td>
                 </tr>
               );
             })
