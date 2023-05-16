@@ -176,6 +176,7 @@ for index in range(len(friends)):
 # 11: Exponent function
 print("----------------11: Exponent function-----------------")
 
+
 def raise_to_power(base_num, pow_num):
     result = 1
     for index in range(pow_num):
@@ -183,25 +184,24 @@ def raise_to_power(base_num, pow_num):
     return result
 
 
-print(raise_to_power(2,3))
+print(raise_to_power(2, 3))
 
 # 12: Lists & Nested loop
 print("----------------12: Lists & Nested loop-----------------")
 number_grid = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9],
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
     [0]
 ]
 
-print(number_grid[0][0])    # 1
-print(number_grid[2][1])    # 8
+print(number_grid[0][0])  # 1
+print(number_grid[2][1])  # 8
 
 for row in number_grid:
     print(row)
     for col in row:
         print(col)
-
 
 # 13: Try/Expect
 print("----------------13: Try/Expect-----------------")
@@ -223,23 +223,18 @@ name = "Jack"
 print(f'Name is {name}')
 print('Name is %s', name)
 
-print('%f' % 1.11) # 1.110000  default 6 decimal places
-print('%.1f' % 1.11) # 1.1      keep 1 decimal places
-print('%g' % 1111.1111) # 1111.11   keep 6 number
+print('%f' % 1.11)  # 1.110000  default 6 decimal places
+print('%.1f' % 1.11)  # 1.1      keep 1 decimal places
+print('%g' % 1111.1111)  # 1111.11   keep 6 number
 
-print('%20s' % 'hello world') #          hello world  Right-aligned, take 20 bits, if not enough, make up
-print('%-20s' % 'hello world') # hello world                    Left-aligned, take 20 bits, fill in if not enough
-print('%.2s' % 'hello world')   # he
-print('%10.2s' % 'hello world')  #         he       Right justify, take 2 bits
-print('%-10.2s' % 'hello world') # he               Left justified, take 2 bits
+print('%20s' % 'hello world')  # hello world  Right-aligned, take 20 bits, if not enough, make up
+print('%-20s' % 'hello world')  # hello world                    Left-aligned, take 20 bits, fill in if not enough
+print('%.2s' % 'hello world')  # he
+print('%10.2s' % 'hello world')  # he       Right justify, take 2 bits
+print('%-10.2s' % 'hello world')  # he               Left justified, take 2 bits
 
-print('{} {}'.format('hello','world'))  #  hello world
-print('{0} {1}'.format('hello','world'))  #  hello world
-print('{0} {1} {0}'.format('hello','world'))  #  hello world hello
-print('{1} {1} {0}'.format('hello','world'))# world world hello
-print('{a} {tom} {a}'.format(tom='hello',a='world'))  #  world hello world
-
-
-
-
-
+print('{} {}'.format('hello', 'world'))  # hello world
+print('{0} {1}'.format('hello', 'world'))  # hello world
+print('{0} {1} {0}'.format('hello', 'world'))  # hello world hello
+print('{1} {1} {0}'.format('hello', 'world'))  # world world hello
+print('{a} {tom} {a}'.format(tom='hello', a='world'))  # world hello world

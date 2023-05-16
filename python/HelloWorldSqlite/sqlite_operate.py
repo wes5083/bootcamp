@@ -7,7 +7,8 @@ def customers_finnish():
     cur = con.cursor()
     cur.execute("SELECT * FROM Customers WHERE Country = 'Finland'")
     data_list = cur.fetchall()
-    print(data_list)
+    for customer in data_list:
+        print(customer)
     cur.close()
     con.close()
     return data_list
