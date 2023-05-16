@@ -7,6 +7,7 @@ def customers_finnish():
     cur = con.cursor()
     cur.execute("SELECT * FROM Customers WHERE Country = 'Finland'")
     data_list = cur.fetchall()
+    print(data_list)
     cur.close()
     con.close()
     return data_list
@@ -14,7 +15,6 @@ def customers_finnish():
 
 def export_cvs():
     data_list = customers_finnish()
-    print(data_list)
     columns = ['CustomerID', 'CompanyName', 'ContactName', 'ContactTitle', 'Address', 'City', 'Region', 'PostalCode',
                'Country',
                'Phone', 'Fax']
