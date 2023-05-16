@@ -1,12 +1,14 @@
 from flask import Flask, jsonify, request
 import sqlite3
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 db = "C:\\00_zyw\\500_Bootcamp\\bootcamp\\database\\northwind.db"
 
 
-@app.route("/customers", methods=['GET'])
+@app.route("/api/customers", methods=['GET'])
 def customers():
     con = sqlite3.connect(db)
     sql = "SELECT * FROM Customers Where 1=1 "
