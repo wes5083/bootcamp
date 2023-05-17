@@ -4,10 +4,13 @@ const CustomerPage = () => {
   const [customerList, setCustomerList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  const backendForCSharp = "http://localhost:5062/api/GetCustomers";
+  const backendForPython = "http://localhost:5000/api/customers";
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        fetch("http://localhost:5000/api/customers")
+        fetch(backendForPython)
           .then((response) => response.json())
           .then((data) => {
             console.log(data);
