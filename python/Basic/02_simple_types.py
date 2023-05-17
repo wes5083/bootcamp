@@ -28,3 +28,13 @@ print('default is decimal: ', 18)  # 18
 print('binary: ', 0b111)  # start 0b      7
 print('Octal: ', 0o777)  # start 0o      511
 print('hexadecimal: ', 0xFFF)  # start 0x      4095
+
+
+print("---------2: Boolean---------")
+
+b1 = True  # can be converted to an integer 1
+b2 = False  # can be converted to an integer 0
+print(b1, type(b1))  # True bool
+print(b2, type(b2))  # False bool
+print(b1 + 1.1)  # 2.1
+print(b2 + 1)  # 1
