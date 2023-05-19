@@ -21,15 +21,20 @@ print(a, id(a))
 print(b, id(b))
 print(c, id(c))
 
-# Basic calculate
-print("----------------Basic calculate-----------------")
+a, b, c = 20, 30, 40
+print(a, id(a))
+print(b, id(b))
+print(c, id(c))
 
-num1 = input("Enter a number: ")
-num2 = input("Enter another number: ")
+a += 10
+print(a)
 
-result = num1 + num2
-print(result)  # string add
+a -= 10
+print(a)
 
-# only support int, other function float and so on
-result = int(num1) + int(num2)
-print(result)  # number add
+a *= 10
+print(a)
+
+a /= 10
+print(a)
+
