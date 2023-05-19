@@ -63,3 +63,20 @@ print(4 << 2)  # 16
 # Move one bit to the right, equivalent to divided by 2
 print(4 >> 1)  # 2
 print(4 >> 2)  # 1
+
+
+'''
+#
+1. **
+2. *,/,//,%       
+3. +，-
+4. <<, >>
+5. &
+6. |
+7. >,<,==,!=, >=, <=
+8. and
+9. or
+10. =
+
+'''
+
