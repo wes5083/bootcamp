@@ -38,3 +38,8 @@ print(a)
 a /= 10
 print(a)
 
+
+print(a == b)
+print(a >= b)
+print(a <= b)
+print(a != b)
