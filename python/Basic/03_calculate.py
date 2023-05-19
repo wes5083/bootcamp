@@ -38,8 +38,18 @@ print(a)
 a /= 10
 print(a)
 
-
+a = 10
+b = 10
 print(a == b)
 print(a >= b)
 print(a <= b)
 print(a != b)
+print(a is b)  # True: a equal b and a.id equal b.id
+print(a is not b)  # False
+
+list1 = [11, 22, 33, 44]
+list2 = [11, 22, 33, 44]
+print(list1 is list2)  # False
+print(id(list1))
+print(id(list2))
+print(list1 is not list2)  # True
