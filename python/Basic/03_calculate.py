@@ -53,3 +53,13 @@ print(list1 is list2)  # False
 print(id(list1))
 print(id(list2))
 print(list1 is not list2)  # True
+
+print(4 & 8)  # all is 1 the result is 1
+print(4 | 8)  # all is 0 the result is 0
+
+# Move one bit to the left, equivalent to multiplying by 2
+print(4 << 1)  # 8
+print(4 << 2)  # 16
+# Move one bit to the right, equivalent to divided by 2
+print(4 >> 1)  # 2
+print(4 >> 2)  # 1
