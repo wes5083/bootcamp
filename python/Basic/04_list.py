@@ -13,7 +13,8 @@ print(lst.index('hello', 1, 4))
 print(lst[1], lst[-1])
 
 lst3 = [10, 20, 30, 40, 5, 60]
-print(lst3[1:6])  # start 1 every 1
-print(lst3[1:6:])  # start 1 every 1
-print(lst3[1:6:2])  # start 1 every 2
-print(lst3[:6:2])  # start 0 every 2
+print(lst3[1:6])  # start 1 step 1
+print(lst3[1:6:])  # start 1 step 1
+print(lst3[1:6:2])  # start 1 step 2
+print(lst3[:6:2])  # start 0 step 2
+print(lst3[1::2])  # start 1 step 2
