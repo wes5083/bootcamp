@@ -10,8 +10,9 @@ print(lst2)
 
 print(lst.index('hello'))
 print(lst.index('hello', 1, 4))
-print(lst[1],lst[-1])
+print(lst[1], lst[-1])
 
-
-
-
+lst3 = [10, 20, 30, 40, 5, 60]
+print(lst3[1:6])
+print(lst3[1:6:])  # every 1
+print(lst3[1:6:2])  # every 2
