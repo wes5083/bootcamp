@@ -65,5 +65,12 @@ lst.clear()
 print(lst)
 
 lst = [10, 20, 30, 40, 50, 60]
-del lst
+# del lst
+# print(lst)
+
+lst = [10, 20, 30, 40]
+lst[2] = 100
+print('----------------')
+print(lst)
+lst[1:3] = [1000, 2000, 3000, 4000]
 print(lst)
