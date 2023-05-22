@@ -63,6 +63,8 @@ lst3 = [True, False, 'hello']
 lst[1:] = lst3
 print(lst)
 
-
-
-
+lst = [10, 20, 30, 40, 50, 60]
+lst.remove(30)
+print(lst)
+lst.remove(100)
+print(lst)
