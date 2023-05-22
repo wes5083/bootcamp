@@ -85,3 +85,7 @@ lst_new = sorted(lst)
 print(lst)
 print(lst_new)
 
+lst = [i*i for i in range(1, 10)]
+print(lst)
+lst = [i*2 for i in range(1,10)]
+print(lst)
