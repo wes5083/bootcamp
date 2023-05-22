@@ -25,3 +25,5 @@ print(lst3[7::-1])  # start=7, stop=0, step=-1
 print(lst3[6:0:-2])  # start=6, stop=0, step=-2
 
 print('p' in 'python')  # true
+print(10 in lst3)
+print(10 not in lst3)

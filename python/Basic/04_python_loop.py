@@ -10,16 +10,15 @@ print(list(r))  # [1...9]
 r = range(1, 10, 2)
 print(list(r))  # [1,3,5,7,9]
 
-for i in range(1,4):
-    for j in range(1,5):
+for i in range(1, 4):
+    for j in range(1, 5):
         print('*', end='\t')
     print()
 
-for i in range(1,10):
-    for j in range(1,i+1):
-        print(i, '*', j, '=', i*j, '  ', end='')
+for i in range(1, 10):
+    for j in range(1, i + 1):
+        print(i, '*', j, '=', i * j, '  ', end='')
     print()
-
 
 # in, not in
 print(10 in r)
@@ -48,3 +47,8 @@ for row in number_grid:
     for col in row:
         print(col)
 
+lst = [10, 20, 30]
+for item in lst:
+    print(item)
+
+lst.append(40)
