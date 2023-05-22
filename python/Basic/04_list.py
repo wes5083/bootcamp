@@ -27,3 +27,27 @@ print(lst3[6:0:-2])  # start=6, stop=0, step=-2
 print('p' in 'python')  # true
 print(10 in lst3)
 print(10 not in lst3)
+
+
+
+lst = [10, 20, 30]
+
+for item in lst:
+    print(item)
+print('id before:', id(lst))
+lst.append(40)  # add on the end
+print('id after:', id(lst))
+lst2 = [40, 50]
+lst.extend(lst2)  # add on the end
+print(lst)
+lst.insert(2, True)
+print(lst)
+lst3 = [True, False, 'hello']
+lst[1:] = lst3
+print(lst)
+
+lst = [10, 20, 30, 40, 50, 60]
+lst.remove(30)
+print(lst)
+lst.remove(100)
+print(lst)
