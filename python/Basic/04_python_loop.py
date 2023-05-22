@@ -48,7 +48,21 @@ for row in number_grid:
         print(col)
 
 lst = [10, 20, 30]
+
 for item in lst:
     print(item)
+print('id before:', id(lst))
+lst.append(40)  # add on the end
+print('id after:', id(lst))
+lst2 = [40, 50]
+lst.extend(lst2)  # add on the end
+print(lst)
+lst.insert(2, True)
+print(lst)
+lst3 = [True, False, 'hello']
+lst[1:] = lst3
+print(lst)
 
-lst.append(40)
+
+
+
