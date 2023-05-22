@@ -28,8 +28,6 @@ print('p' in 'python')  # true
 print(10 in lst3)
 print(10 not in lst3)
 
-
-
 lst = [10, 20, 30]
 
 for item in lst:
@@ -49,5 +47,23 @@ print(lst)
 lst = [10, 20, 30, 40, 50, 60]
 lst.remove(30)
 print(lst)
-lst.remove(100)
+# lst.remove(100) # error
+
+lst.pop(1)  # pop index
+print(lst)
+# lst.pop(6)  # error not exist index
+lst.pop()  # pop the last one
+print(lst)
+
+lst_new = lst[1:3]
+print(lst)
+print(lst_new)
+lst[1:3] = []
+print(lst)
+
+lst.clear()
+print(lst)
+
+lst = [10, 20, 30, 40, 50, 60]
+del lst
 print(lst)
