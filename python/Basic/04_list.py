@@ -74,3 +74,14 @@ print('----------------')
 print(lst)
 lst[1:3] = [1000, 2000, 3000, 4000]
 print(lst)
+lst.sort()
+print(lst)
+lst.sort(reverse=True)
+print(lst)
+lst.sort(reverse=False)
+print(lst)
+
+lst_new = sorted(lst)
+print(lst)
+print(lst_new)
+
