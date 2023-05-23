@@ -72,3 +72,9 @@ print(s4.issuperset(s3))
 print(s2.isdisjoint(s3))
 s5 = {100, 200}
 print(s2.isdisjoint(s5))
+
+print(s1 & s2)
+print(s1.union(s2))
+print(s1 | s2)
+
+print(s1.difference(s2))
