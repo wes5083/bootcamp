@@ -19,12 +19,13 @@ for item in t:
 
 lst = []
 lst1 = list()
+print(type(lst), type(lst1))
 d = {}
-d2 = dict()
+d1 = dict()
+print(type(d), type(d1))
 t = ()
-t2 = tuple()
-
-print()
+t1 = tuple()
+print(type(t), type(t1))
 
 lst = [10, 20, 30]
 print(id(str))
