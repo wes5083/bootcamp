@@ -27,3 +27,44 @@ t1 = tuple()
 print(type(t), type(t1))
 s = set()
 print(type(s))
+
+s = {10, 20, 30}
+print(10 in s)
+print(100 in s)
+print(10 not in s)
+print(100 not in s)
+
+''' collection ADD '''
+s.add(80)
+print(s)
+s.update({100, 200})
+print(s)
+s.update([300, 400])
+print(s)
+s.update((500, 600))
+print(s)
+
+'''collection delete'''
+
+s.remove(100)
+print(s)
+s.remove(500)
+print(s)
+
+s.discard(500)
+s.discard(300)
+print(s)
+s.pop()
+s.pop()
+# s.pop(999)
+print(s)
+
+s1 = {10, 20, 30}
+s2 = {10, 30, 20}
+s3 = {10, 20}
+s4 = {10, 20, 30, 40, 50}
+print(s1 == s2)
+print(s1 != s2)
+
+print(s3.issubset(s2))
+print(s4.issuperset(s3))
