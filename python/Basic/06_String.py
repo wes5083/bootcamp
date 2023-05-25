@@ -72,3 +72,16 @@ print(''.join(lst))
 lst = ('Hello', 'java', 'python')
 print('|'.join(lst))
 print('*'.join('Python'))
+
+
+
+
+
+
+
+
+
+
+
+
+
