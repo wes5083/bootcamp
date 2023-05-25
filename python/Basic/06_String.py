@@ -40,29 +40,35 @@ s = 'hello world python'
 lst = s.split()  # default is  space
 print(lst)
 s = 'hello|world|python'
-print(s.split(sep='|')) # start left
-print(s.split(sep='|',maxsplit=1))
+print(s.split(sep='|'))  # start left
+print(s.split(sep='|', maxsplit=1))
 print(s.rsplit('|'))
-print(s.rsplit(sep='|',maxsplit=1))
+print(s.rsplit(sep='|', maxsplit=1))
 
-print('1.', s.isidentifier()) # False
-print('2.', 'hello'.isidentifier()) # True
-print('3.', 'zhangsan_'.isidentifier()) # True
-print('4.', '\t'.isspace()) # True
-print('5.', 'abc'.isalpha()) # True
-print('6.', 'zhangsan'.isalpha()) # True
-print('7.', 'zhangsan1'.isalpha()) # False
-print('8.', '123'.isdecimal()) # True
-print('9.', '123zhang'.isdecimal()) # False
-print('10.', '123'.isnumeric()) # True
-print('11.', '123zhang'.isnumeric()) # True
+print('1.', s.isidentifier())  # False
+print('2.', 'hello'.isidentifier())  # True
+print('3.', 'zhangsan_'.isidentifier())  # True
+print('4.', '\t'.isspace())  # True
+print('5.', 'abc'.isalpha())  # True
+print('6.', 'zhangsan'.isalpha())  # True
+print('7.', 'zhangsan1'.isalpha())  # False
+print('8.', '123'.isdecimal())  # True
+print('9.', '123zhang'.isdecimal())  # False
+print('10.', '123'.isnumeric())  # True
+print('11.', '123zhang'.isnumeric())  # True
 
+print('12.', 'abc1'.isalnum())  # True
+print('13.', 'zhangsna123'.isalnum())  # True
+print('14.', 'abc!'.isnumeric())  # False
 
+s = 'Hello Python, Hello Python,Hello Python'
+print(s.replace('Python', 'Java'))
+print(s.replace('Python', 'Java', 2))
 
+lst = ['Hello', 'java', 'python']
+print('|'.join(lst))
+print(''.join(lst))
 
-
-
-
-
-
-
+lst = ('Hello', 'java', 'python')
+print('|'.join(lst))
+print('*'.join('Python'))
