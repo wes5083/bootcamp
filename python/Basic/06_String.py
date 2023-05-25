@@ -35,3 +35,34 @@ print(s.zfill(20))
 print(s.zfill(10))
 print('-8910'.zfill(8))
 print(s2.title())
+
+s = 'hello world python'
+lst = s.split()  # default is  space
+print(lst)
+s = 'hello|world|python'
+print(s.split(sep='|')) # start left
+print(s.split(sep='|',maxsplit=1))
+print(s.rsplit('|'))
+print(s.rsplit(sep='|',maxsplit=1))
+
+print('1.', s.isidentifier()) # False
+print('2.', 'hello'.isidentifier()) # True
+print('3.', 'zhangsan_'.isidentifier()) # True
+print('4.', '\t'.isspace()) # True
+print('5.', 'abc'.isalpha()) # True
+print('6.', 'zhangsan'.isalpha()) # True
+print('7.', 'zhangsan1'.isalpha()) # False
+print('8.', '123'.isdecimal()) # True
+print('9.', '123zhang'.isdecimal()) # False
+print('10.', '123'.isnumeric()) # True
+print('11.', '123zhang'.isnumeric()) # True
+
+
+
+
+
+
+
+
+
+
