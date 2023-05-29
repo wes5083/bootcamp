@@ -20,11 +20,18 @@ dotnet/SQLite/bin
 dotnet/SQLite/obj
 dotnet/SQLite/.vscode
 
+
 azure/AzureNoSQLDatabaseDemo/.vs/*
 azure/AzureNoSQLDatabaseDemo/.vs/*/*
 azure/AzureNoSQLDatabaseDemo/.vs/*/*/*
 azure/AzureNoSQLDatabaseDemo/AzureNoSQLDatabaseDemo/bin
 azure/AzureNoSQLDatabaseDemo/AzureNoSQLDatabaseDemo/obj
+
+azure/WebApplication-Azure/.vs/*
+azure/WebApplication-Azure/.vs/*/*
+azure/WebApplication-Azure/WebApplication-Azure/bin
+azure/WebApplication-Azure/WebApplication-Azure/obj
+
 
 js/*/*/node_modules
 js/*/*/package-lock.json
@@ -33,6 +40,5 @@ python/*.idea
 python/*/__pycache__
 python/*/*/__pycache__
 python/*/*/*/__pycache__
-/azure/WebApplication-Azure/.vs/WebApplication-Azure
-/azure/WebApplication-Azure/WebApplication-Azure/bin/Debug/net7.0
-/azure/WebApplication-Azure/WebApplication-Azure/obj
+
+
