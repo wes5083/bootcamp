@@ -85,7 +85,26 @@ lst_new = sorted(lst)
 print(lst)
 print(lst_new)
 
-lst = [i*i for i in range(1, 10)]
+lst = [i * i for i in range(1, 10)]
 print(lst)
-lst = [i*2 for i in range(1,10)]
+lst = [i * 2 for i in range(1, 10)]
 print(lst)
+
+# list = [expression for item in iterable]
+# list = [expression for item in iterable if conditional]
+# list = [expression(if/else) for item in iterable if conditional]
+
+squares = []
+for i in range(1, 11):
+    squares.append(i * i)
+print(squares)
+squares = [i * i for i in range(1, 11)]
+print(squares)
+
+students = [100, 90, 80, 70, 60, 50, 40, 30]
+passed_students = list(filter(lambda x: x >= 60, students))
+print(passed_students)
+passed_students = [i for i in students if i >= 60]
+print(passed_students)
+passed_students = [i if i >= 60 else "FAILED" for i in students]
+print(passed_students)
