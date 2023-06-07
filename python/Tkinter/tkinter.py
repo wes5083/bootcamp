@@ -3,7 +3,7 @@ from tkinter import *
 window = Tk()  # instantiate an instance of a window
 window.geometry("420x420")
 window.title("GUI Program")
-icon = PhotoImage(file='python.png')
+icon = PhotoImage(file='../Basic/python.png')
 window.iconphoto(True, icon)
 window.config(background="#5cfcff")
 
