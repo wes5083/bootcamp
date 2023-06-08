@@ -11,7 +11,7 @@ def click():
 
 
 window = Tk()
-icon = PhotoImage(file='../Basic/python.png')
+icon = PhotoImage(file='python.png')
 button = Button(window,
                 text="click me!",
                 command=click,

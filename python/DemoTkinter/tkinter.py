@@ -1,9 +1,9 @@
 from tkinter import *
-
+import tkinter as tk
 window = Tk()  # instantiate an instance of a window
 window.geometry("420x420")
 window.title("GUI Program")
-icon = PhotoImage(file='../Basic/python.png')
+icon = PhotoImage(file='python.png')
 window.iconphoto(True, icon)
 window.config(background="#5cfcff")
 
