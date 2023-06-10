@@ -1,7 +1,6 @@
-from tkinter import *
-
+import tkinter
+from tkinter.constants import *
 count = 0
-
 
 def click():
     global count
@@ -10,9 +9,9 @@ def click():
     print("You clicked the button!")
 
 
-window = Tk()
-icon = PhotoImage(file='python.png')
-button = Button(window,
+window = tkinter.Tk()
+icon = tkinter.PhotoImage(file='python.png')
+button = tkinter.Button(window,
                 text="click me!",
                 command=click,
                 font=("Comic Sans", 30),
