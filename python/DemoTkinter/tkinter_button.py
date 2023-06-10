@@ -2,6 +2,7 @@ import tkinter
 from tkinter.constants import *
 count = 0
 
+
 def click():
     global count
     count += 1
